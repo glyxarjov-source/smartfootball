@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartFootball</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>⚽ SmartFootball Dashboard</h1>
+    <p>Відстеження прогресу футболіста</p>
+
+    <div class="stats">
+      <label>Удари: <input type="number" id="shots" /></label>
+      <label>Паси: <input type="number" id="passes" /></label>
+      <label>Асисти: <input type="number" id="assists" /></label>
+      <label>Виграні єдиноборства: <input type="number" id="duels" /></label>
+      <button onclick="saveData()">💾 Зберегти</button>
+    </div>
+
+    <div id="analytics"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
